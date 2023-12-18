@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active:
+      - local
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - local
+  datasource:
+    username: pnarayan
+    password: pratap123
+    url: jdbc:mysql://localhost:3306/user_details
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  servlet:
+    context-path: /userdetailsservice
+
+tokenSecret: jf9i4jgu83nfl0jfu57ejf7jf9i4jgu83nfl0jfu57ejf7jf9i4jgu83nfl0jfu57ejf7jf9i4jgu83nfl0jfu57ejf7jf9i4jgu83nfl0jfu57ejf7
